@@ -35,8 +35,38 @@ Untracked files:
          	new file:   git_README.md
 	- All necessary files are added in staged, now we can commit changes to it.
 		git commit -m "Version 0.0.1. Adding commit to git_README.md files"
-		- create mode 100644 git_README.md
+=====================OUTPUT=============================
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
 
+nothing to commit, working tree clean
+========================================================
+	
+	- "Nothing to commit", working directory clean. No changes to add to Git or to commit.
+
+## Git Diff
+
+- git diff command shows what change have been made since last commit
+- Any changes made and statge via git add command and then run "git diff". it will show you nothing. 
+
+- For example : I added these line GIT DIFF in this git_README.md and then git add git_README.md. This will show nothing in GIT DIFF. 
+
+===================OUTPUT==============================
+File Modified Only : 
+
++## Git Diff
+ 
++- git diff command shows what change have been made since last commit
++- Any changes made and statge via git add command and then run "git diff". it will show you nothing. 
++
++- For example : I added these line GIT DIFF in this git_README.md and then git add git_README.md. This will show nothing in GIT DIFF. 
++
+
+
+
+	
 
 	
 
