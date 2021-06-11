@@ -31,6 +31,13 @@ Untracked files:
 - nothing added to commit but untracked files present (use "git add" to track)
 =======================================================
 
+	- Now files are in a section called "Changes to be committed"
+         	new file:   git_README.md
+	- All necessary files are added in staged, now we can commit changes to it.
+		git commit -m "Version 0.0.1. Adding commit to git_README.md files"
+		- create mode 100644 git_README.md
+
+
 	
 
 	
