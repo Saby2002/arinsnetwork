@@ -64,6 +64,18 @@ File Modified Only :
 +- For example : I added these line GIT DIFF in this git_README.md and then git add git_README.md. This will show nothing in GIT DIFF. 
 +
 
+Performed git add only : 
+
+$ git add git_README.md 
+$ git diff
+
+No output in git diff. 
+
+Now performed git commit : 
+
+$ git commit -m "Version 0.0.2"
+[master ef6cf70] Version 0.0.2
+ 1 file changed, 31 insertions(+), 1 deletion(-)
 
 
 	
