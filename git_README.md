@@ -177,6 +177,39 @@ Author: Saby2002 <sabyasachikar24@gmail.com>
 Date:   Sat Jun 12 03:11:26 2021 +0530
 ===========================================================
 
+## Cloning a GitHub Repository 
 
+- To clone locally with repository, it should be cloned. 
+- Use "git clone" command to clone repository 
 
+	- git clone https://github.com/Saby2002/arinsnetwork.git
+
+## Working with repository 
+
+- Git clone command not only copied repository to use it locally, but also configured git accordingly. 
+	- Folder .git was created
+	- All repository data is downloaded
+	- Downloaded all changes that were in repository 
+	- GitHub repository as a remote for local repository
+
+- Now we have the complete local Git repository where we can work. 
+
+	- sync local content with GITHUB using git pull command
+	- Modifying repository files
+	- Commit changes using git commit commnd
+	- Transfering local changes to GITHUB repository with git PUSH Command 
+	- When working first we need to update the local repository 
+	- Then we need to load changes to GIT
+
+- Synchronizing local repository with remote repository
+
+	- All commands are executed inside repository directory
+	- If contents of local repository are the same as those of remote repository "Git pull" says upto date. 
+	- if any changes were made then pull from the Github all the directories from the githun
+	- If you want to add a specific file, you need to enter git. and do git add. command
+	- Followed by git -m commit. Its always better to specify what you are adding or any specific version details associated with this as a form of comment. 
+	- Git Push on GitHub
+		- Command "git push" is used to load all local changes to GITHUB
+	- Before executing git push you can run git log -p/origin. It will show what changes you are going to add to your repository on GitHub
+	- 
 
