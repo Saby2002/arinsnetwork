@@ -1,0 +1,8 @@
+device1:
+        - device_type: cisco_ios_test
+        - host: 169.254.255.101
+        - username: saby
+        - password: saby
+        - secret: saby
+
+

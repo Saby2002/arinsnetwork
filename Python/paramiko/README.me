@@ -1,0 +1,44 @@
+Paramiko is an implementation of SSHv2 protocol on Python. 
+Paramiko provides client-server functionality
+Since Paramiko is not part of standard python lib. It needs to be installed
+
+"pip install paramiko"
+
+## Connection established 
+	- Client is created
+	- Client Configuration is set
+	- Connection is initiated
+	- interactive session is returned
+
+client = paramiko.SSHClient()
+client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+client.connect(hostname="169.254.255.101", username="cisco", password="cisco", look_for_keys=False, allow_agent=False)
+ssh = client.invoke_shell()
+
+SSHClient is a class that represents a connection to SSH server. 
+It performs client authentication. 
+
+String set_missing_host_key_policy is optional, it indicates which policy to use when connecting to a server whose key is unknown. 
+
+Policy paramiko.AutoAddPolicy() automatically add new hostname and key to local HostKeys object.paramiko.AutoAddPolicy() automatically add new hostname and key to local Hostkeys object.
+
+Method connect to SSH server and authentication the connection. Parameters
+
+	- look_for_keys : by default paramiko key authentication. To disable this, put the flag in False
+	- allow_agent : paramiko can connect to a local SSH agent. This is necessary when working with keys and since in ths case authentication id done by login/passowrd, it should be disabled. 
+
+	- Method inkove_shell allows to set an interactive SSH session with server.
+
+	- Method send - sends specified string to session and returns amount of sent bytes
+
+		- ssh.send("enable\n")
+		- ssh.send("cisco\n")
+		- ssh.send("sh ip int br\n")
+
+	- Note : In code after send you will need to put time.sleep, especially between send and recv. Since this an interactive session and commands are slow to type, everything works without pause. 
+
+		- ssh.recv(3000)
+
+	- then close the session ssh.close()
+
+
